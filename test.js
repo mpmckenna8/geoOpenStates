@@ -1,3 +1,11 @@
-var geostate = require('./index.js');
+var states = require('./states.js');
+var leginfo = require('./index.js');
 
-geostate();
+
+var beep = states(cb);
+
+console.log(beep)
+
+function cb(json){
+ console.log(json)
+}
