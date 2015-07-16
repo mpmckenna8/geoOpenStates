@@ -1,4 +1,4 @@
-
+// as of now this returns a callback which will have a json array of the states as its first argument.
 
 var OpenStates = require('openstates');
 
@@ -13,13 +13,10 @@ var states;
 module.exports = function(cb){
 
 // this is just getting a json array of states metatdata
-return openstates.metadataOverview(function(err, json) {
+openstates.metadataOverview(function(err, json) {
   if (err) throw err;
   //console.log(json);
   states = json;
-   
-
-
 
   cb(json);
 });
