@@ -1,6 +1,6 @@
 {
   "name": "geoopenstates",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Gets a given state and house and makes a nice geojson object of them.",
   "main": "index.js",
   "dependencies": {
